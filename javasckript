@@ -1,0 +1,25 @@
+// Mainīgo definēšana
+const calcBtn = document.getElementById('calc-btn');
+const periodSelect = document.getElementById('period-select');
+const resultArea = document.getElementById('result-area');
+
+// Funkcija aprēķinam
+function aprekinatCenu() {
+    const period = parseInt(periodSelect.value);
+    let cena;
+
+    // Loģika un papildu uzdevums: mēneša/gada salīdzinājums
+    if (period === 1) {
+        cena = 10;
+        resultArea.innerHTML = `Mēneša abonements maksā ${cena} EUR.`;
+    } else {
+        cena = 100;
+        // Papildu funkcionalitāte: parāda ietaupījumu
+        const ietaupijums = (12 * 10) - 100;
+        resultArea.innerHTML = `Gada abonements maksā ${cena} EUR. <br> 
+                                <span style="color: green;">Jūs ietaupāt ${ietaupijums} EUR gadā!</span>`;
+    }
+}
+
+// Pasākuma klausītājs
+calcBtn.addEventListener('click', aprekinatCenu);
