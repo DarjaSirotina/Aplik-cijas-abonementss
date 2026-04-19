@@ -1,0 +1,11 @@
+# Lietotnes Abonēšanas Kalkulators
+Projekts izstrādāts mācību ietvaros.
+
+## Funkcionalitāte
+* Lietotājs izvēlas abonēšanas periodu (mēnesis vai gads).
+* JavaScript aprēķina cenu un parāda ietaupījumu, izvēloties gada plānu.
+
+## Lietošana
+1. Atveriet `index.html` pārlūkprogrammā.
+2. Izvēlieties periodu no saraksta.
+3. Nospiediet pogu "Aprēķināt cenu".
